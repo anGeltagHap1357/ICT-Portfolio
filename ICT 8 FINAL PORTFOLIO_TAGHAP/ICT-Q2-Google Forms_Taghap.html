@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <style> 
+      
+      body{
+          background: #EBDEF0;
+          font-family: "Roboto", sans-serif;
+      }
+      
+      .container{
+          width: 600px;
+          margin: 0 auto;
+      }
+      
+      .box{
+          border-radius: 7px;
+          padding: 20px ;
+          background-color: white;
+          margin: 20px auto;
+      }
+      
+      .label-text{
+          font-size: 15px;
+      }
+      
+      .text-input{
+          border: none;
+          border-bottom: 2px solid #b2b0b0;
+          width: 70%;
+          margin-top: 20px;
+      }
+      
+      .text-input-two{
+          width: 100%;
+          padding-bottom: 20px;
+          margin-top: 20px;
+      }
+      
+      .radio-div{
+          margin: 10px 0px;
+      }
+      
+      .radio-input{
+          margin: 10px 0px;
+          margin-right: 10px;
+      }
+      
+      .submit-button{
+          border: none;
+          border-radius: 7px;
+          background: #AF7AC5;
+          color: white;
+          padding: 10px 25px;
+          font-size: 17px;
+      }
+  </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" style="border-top: 10px solid #AF7AC5;">
+            <h1 style="padding:0; margin:0;">Face-to-face or Online Classes</h1>
+            <p>We hope you find this google form by Group 5 fun to answer! ♡ </p>
+        </div>
+    
+    <form>
+        <div class="box">
+            <label for="name" class="label-text"><b>Name (LN, FR MI)</b></label><br>
+            <input type="text" class="text-input" placeholder="Short-answer text">
+        </div>
+        
+        <div class="box">
+            <label for="name" class="label-text"><b>Date of birth (MM/DD/YY)</b></label><br>
+            <input type="text" class="text-input" placeholder="Short-answer text">
+        </div>
+        
+        <div class="box">
+            <label for="name" class="label-text"><b>Age</b></label><br>
+            <input type="text" class="text-input" placeholder="Short-answer text">
+        </div>
+        
+        <div class="box">
+            <label for="name" class="label-text"><b>Email Address:</b></label><br>
+            <input type="text" class="text-input" placeholder="Short-answer text">
+        </div>
+        
+        <div class="box">
+            <label for="name" class="label-text"><b>Sex/Gender<b/></label><br>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" name="gender"><sup>Male</sup> <br>
+                <input type="radio" class="radio-input" name="gender"><sup>Female</sup>
+            </div>
+        </div>
+        
+        <div class="box">
+            <label for="name" class="label-text"><b>Which do you prefer better, online or face-to-face classes?<b/></label><br>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" name="IC"><sup>Face-to-Face Classes</sup> <br>
+                <input type="radio" class="radio-input" name="IC"><sup>Online Classes</sup>  <br>
+            </div>
+        </div>
+        
+        <div class="box">
+            <label for="" class="label-text"><b>Why do you prefer such choice?</b></label> <br>
+            <input type="text" class="text-input" placeholder="Long-answer text">
+        </div>
+		
+		<div class="box">
+            <label for="" class="label-text"><b>Give 1 advantage and disadvantage of your preferred choice. Please elaborate your answer.</b></label> <br>
+            <input type="text" class="text-input" placeholder="Long-answer text">
+        </div>
+		
+		<div class="box">
+            <label for="name" class="label-text">If face-to-face classes were implimented during these times, would you be willing to participate?</label><br>
+            <div class="radio-div">
+                <input type="radio" class="radio-input" name="IC"><sup>Yes</sup> <br>
+                <input type="radio" class="radio-input" name="IC"><sup>No</sup>  <br>
+            </div>
+		</div>
+		
+		<div>
+            <input type="submit" onclick="submitted()" class="submit-button">
+			
+        </div>
+        
+    </form>
+    </div>
+    
+</body>
+</html>
